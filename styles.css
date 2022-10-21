@@ -1,0 +1,22 @@
+#flame {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+#content{
+
+position: relative;
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+    background-color: transparent;
+    color: black;
+    a.REKURENCJA: active
+    {
+        color: white;
+    }
+}
