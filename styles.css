@@ -5,11 +5,46 @@
     min-width: 100%;
     min-height: 100%;
 }
+#menu
+{
+    background-color: #303030;
+    margin-top: 20px;
+    color: #ffffff;
+    padding: 10px;    
+}
+.option
+{
+    float left;
+	min-width:50px;
+	height: 25px;
+	font-size: 18px;
+	padding: 10px;
+	border-right: 2px solid #444444;
+	opacity: 0.8; 
+}
+.option:hover
+{
+    background-color: #000000;
+	cursor: pointer;
+}
+#topbar
+{
+    background-color: #128870;
+	color: white;
+	font-size: 16px;
+	text-align: justify;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	width: 990px;
+	height: 150px;
+	
+}
 #content{
 
 position: relative;
     height: 100px;
-    width: 500px;
+    width: 1000px;
     margin: auto;
     text-align: center;
     font-size: 100px;
