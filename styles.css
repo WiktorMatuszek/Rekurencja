@@ -1,3 +1,4 @@
+
 body {
     background-image: url("https://images7.alphacoders.com/875/875276.jpg ");
     background-size: cover;
@@ -96,9 +97,11 @@ body {
     color: white;
     margin-top: 20px;
 }
+
 .waviy {
     position: relative;
 }
+
 .waviy span {
     position: relative;
     display: inline-block;
@@ -108,19 +111,15 @@ body {
     animation: flip 10s infinite;
     animation-delay: calc(.4s * var(--i))
 }
+
 @keyframes flip {
-    0%,80% {
+    0%, 80% {
         transform: rotateY(360deg)
     }
 }
-#footer
-{
-	clear: both;
-	margin-bottom: auto;
-	text-align: center;
-	font-size: 15px;
-	background-color: transparent;
-	width: 1000px;
-	height: auto;
+
+#headerPopup {
+    height: auto;
+    width: auto;
 }
-}
+
