@@ -4,71 +4,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <link rel="stylesheet" href="styles.css">
     <title>Rekurencja</title>
-	<script>
-		function gl() {
-			document.getElementById("content").innerHTML = "strona glowna";
-		}
-		function f() {
-			document.getElementById("content").innerHTML = "fraktale";
+    <script>
+        function gl() {
+            document.getElementById("content").innerHTML = "strona glowna";
+            document.getElementById("headerPopup").style.display = "none";
+            document.getElementById("fib").style.display = "none";
+            document.getElementById("han").style.display = "none";
+            document.getElementById("ciag").style.display = "none";
 
-		}
-		function ci() {
-			document.getElementById("content").innerHTML = "ciagi";
-		}
-		function fr() {
-			document.getElementById("content").innerHTML = "funkcje rekurencyjne";
-		}
-		function wh() {
-			document.getElementById("content").innerHTML = "wieza haonoi";
-		}
-	</script>
+        }
+
+        function f() {
+            document.getElementById("content").innerHTML = "fraktale";
+            document.getElementById("headerPopup").style.display = "block";
+            document.getElementById("fib").style.display = "none";
+            document.getElementById("han").style.display = "none";
+            document.getElementById("ciag").style.display = "none";
+
+
+        }
+
+        function ci() {
+            document.getElementById("content").innerHTML = "ciagi";
+            document.getElementById("headerPopup").style.display = "none";
+            document.getElementById("fib").style.display = "none";
+            document.getElementById("han").style.display = "none";
+            document.getElementById("ciag").style.display = "block";
+
+        }
+
+        function fr() {
+            document.getElementById("content").innerHTML = "funkcje rekurencyjne";
+            document.getElementById("headerPopup").style.display = "none";
+            document.getElementById("fib").style.display = "block";
+            document.getElementById("han").style.display = "none";
+            document.getElementById("ciag").style.display = "none";
+
+
+        }
+
+        function wh() {
+            document.getElementById("headerPopup").style.display = "none";
+            document.getElementById("content").innerHTML = "wieza haonoi";
+            document.getElementById("fib").style.display = "none";
+            document.getElementById("han").style.display = "block";
+            document.getElementById("ciag").style.display = "none";
+
+        }
+
+        function clear() {
+            document.getElementById("fib").style.display = "none";
+            document.getElementById("headerPopup").style.display = "none";
+            document.getElementById("han").style.display = "none";
+            document.getElementById("ciag").style.display = "none";
+        }
+    </script>
 </head>
-<body>
+<body onload="clear()">
 <!-- <video autoplay muted loop id="flame">
 <source src="flame.mp4" type="video/mp4">
 Your browser does not support HTML5 video.
 </video>
 -->
 <div id="container">
-<div class="waviy" id="logo">
-	<span style="--i:1">R</span>
-	<span style="--i:2">E</span>
-	<span style="--i:3">K</span>
-	<span style="--i:4">U</span>
-	<span style="--i:5">R</span>
-	<span style="--i:6">E</span>
-	<span style="--i:7">N</span>
-	<span style="--i:8">C</span>
-	<span style="--i:9">J</span>
-	<span style="--i:10">A</span>
-	<span style="--i:11">.</span>
-	<span style="--i:12">.</span>
-	<span style="--i:13">.</span>
-</div>
-<div id="topbar">
-     <span class="bigtitle">Słów kilka o rekurencji</span></br>
-	 <div style="padding: 3px"></div>
-	 <span class="italic"> Trudno jest być mną, pułkowniku. Nie jestem podobny do ludzi.</br>
-	 Mój umysł jest zdolny do silnych, rekursywnych myśli, co oznacza,</br>
-	 że widzę więcej ścieżek dalszego rozwoju każdej sytuacji niż jakikolwiek człowiek.</br>
-	 To dar, ale i brzemię.</span></br>
-	 <div style="padding: 3px"></div>
-	 B.V. Larson, Martwe słońce
-</div>	
-<div id="menu">
-    <div class="option" onclick="gl()">Strona główna</div>
-    <div class="option" onclick="f()">Fraktale</div>
-	<div class="option" onclick="ci()">Ciągi</div>
-	<div class="option" onclick="fr()">Funckje rekurencyjne</div>
-	<div class="option" onclick="wh()">Wieża Hanoi</div>
-	<div style="clear:both;"></div>
-</div>
-<div id="text">
-	<p id="content"></p>
-</div>
-<div id="footer">
-     &copy Wszelkie prawa zastrzeżone
-</div>
+    <div class="waviy" id="logo">
+        <span style="--i:1">R</span>
+        <span style="--i:2">E</span>
+        <span style="--i:3">K</span>
+        <span style="--i:4">U</span>
+        <span style="--i:5">R</span>
+        <span style="--i:6">E</span>
+        <span style="--i:7">N</span>
+        <span style="--i:8">C</span>
+        <span style="--i:9">J</span>
+        <span style="--i:10">A</span>
+        <span style="--i:11">.</span>
+        <span style="--i:12">.</span>
+        <span style="--i:13">.</span>
+    </div>
+    <div id="topbar">
+        <span class="bigtitle">Słów kilka o rekurencji</span></br>
+        <div style="padding: 3px"></div>
+        <span class="italic"> Trudno jest być mną, pułkowniku. Nie jestem podobny do ludzi.</br>
+            Mój umysł jest zdolny do silnych, rekursywnych myśli, co oznacza,</br>
+            że widzę więcej ścieżek dalszego rozwoju każdej sytuacji niż jakikolwiek człowiek.</br>
+            To dar, ale i brzemię.</span></br>
+        <div style="padding: 3px"></div>
+        B.V. Larson, Martwe słońce
+    </div>
+    <div id="menu">
+        <div class="option" onclick="gl()">Strona główna</div>
+        <div class="option" onclick="f()">Fraktale</div>
+        <div class="option" onclick="ci()">Ciągi</div>
+        <div class="option" onclick="fr()">Funckje rekurencyjne</div>
+        <div class="option" onclick="wh()">Wieża Hanoi</div>
+        <div style="clear:both;"></div>
+    </div>
+    <div id="text">
+        <p id="content"></p>
+
+    </div>
+    <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+        <video class="embed-responsive-item" width="854" height="480" src="flame.mp4" loop autoplay muted></video>
+    </div>
+    <div id="fib">
+        <image src="https://analizy.investio.pl/wp-content/uploads/2012/09/zloty_prostokat.gif" width="854"
+               height="480"></image>
+    </div>
+    <div id="ciag">
+        <image src="https://image.binance.vision/editor-uploads/25e93738363e49acb0d92b6b4af03641.gif" width="854"
+               height="480"></image>
+        <image src="https://i.gifer.com/6Hd.gif" width="854" height="480"></image>
+        <image src="https://miro.medium.com/max/720/1*XGZzlmuhqlg44eue2fBz0w.gif" width="854" height="480"></image>
+
+    </div>
+    <div id="han">
+        <image src="https://cdn.codespeedy.com/wp-content/uploads/2019/04/tower-of-hanoi-python.gif"></image>
+    </div>
+    <div id="footer">
+        &copy Wszelkie prawa zastrzeżone
+    </div>
 </div>
 
 </body>
