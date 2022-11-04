@@ -1,4 +1,3 @@
-
 body {
     background-image: url("https://images7.alphacoders.com/875/875276.jpg ");
     background-size: cover;
@@ -113,4 +112,15 @@ body {
     0%,80% {
         transform: rotateY(360deg)
     }
+}
+#footer
+{
+	clear: both;
+	margin-bottom: auto;
+	text-align: center;
+	font-size: 15px;
+	background-color: transparent;
+	width: 1000px;
+	height: auto;
+}
 }
