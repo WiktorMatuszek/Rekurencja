@@ -1,3 +1,8 @@
+body
+{
+    background-image: url("bg.jpg");
+	font-family: 'Roboto', sans-serif;
+}
 #flame {
     position: fixed;
     right: 0;
@@ -5,33 +10,25 @@
     min-width: 100%;
     min-height: 100%;
 }
-#menu
+#container
 {
-    background-color: #303030;
-    margin-top: 20px;
-    color: #ffffff;
-    padding: 10px;    
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;	
 }
-.option
+#logo
 {
-    float left;
-	min-width:50px;
-	height: 25px;
-	font-size: 18px;
-	padding: 10px;
-	border-right: 2px solid #444444;
-	opacity: 0.8; 
-}
-.option:hover
-{
-    background-color: #000000;
-	cursor: pointer;
+	color: white;
+	margin-top: 20px;
+	font-size: 44px;
+	letter-spacing: 3px;
+	font-weight: 900;	
 }
 #topbar
 {
     background-color: #128870;
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
 	text-align: justify;
 	padding: 10px;
 	margin-top: 20px;
@@ -40,18 +37,51 @@
 	height: 150px;
 	
 }
-#content{
-
-position: relative;
-    height: 100px;
-    width: 1000px;
-    margin: auto;
+.bigtitle
+{
+	font-size:30px;
+	font-weight:700;
+	letter-spacing: 3px;
+}
+.italic
+{
+	font-style: italic;
+}
+#menu
+{
+	float:left;
+    background-color: #303030;
+    margin-top: 20px;
+	margin-right: 20px;
+    color: #ffffff;
+    padding: 10px;    
+}
+.option
+{
+    float left;
+	min-width:50px;
+	height: 25px;
+	width: 200px;
+	font-size: 18px;
+	padding: 10px;
+	border-right: 2px solid #444444;
+	opacity: 0.8; 
+}
+.option:hover
+{
+    background-color: #ff5050;
+	color: white;
+	cursor: pointer;
+}
+#content
+{
+    float: left;
+    height: 600px;
+    width: 695px;
+	padding: 20px;
     text-align: center;
     font-size: 100px;
-    background-color: transparent;
+    background-color: #669999;
     color: black;
-    a.REKURENCJA: active
-    {
-        color: white;
-    }
+	margin-top: 20px;
 }
