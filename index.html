@@ -4,21 +4,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <link rel="stylesheet" href="styles.css">
     <title>Rekurencja</title>
+	<script>
+		function gl() {
+			document.getElementById("content").innerHTML = "strona glowna";
+		}
+		function f() {
+			document.getElementById("content").innerHTML = "fraktale";
 
+		}
+		function ci() {
+			document.getElementById("content").innerHTML = "ciagi";
+		}
+		function fr() {
+			document.getElementById("content").innerHTML = "funkcje rekurencyjne";
+		}
+		function wh() {
+			document.getElementById("content").innerHTML = "wieza haonoi";
+		}
+	</script>
 </head>
-<style>
 <body>
-      
-</body>
-</style>
-<body>
-<video autoplay muted loop id="flame">
+<!-- <video autoplay muted loop id="flame">
 <source src="flame.mp4" type="video/mp4">
 Your browser does not support HTML5 video.
 </video>
+-->
 <div id="container">
-<div id="logo"> 
-        Rekurencja
+<div class="waviy" id="logo">
+	<span style="--i:1">R</span>
+	<span style="--i:2">E</span>
+	<span style="--i:3">K</span>
+	<span style="--i:4">U</span>
+	<span style="--i:5">R</span>
+	<span style="--i:6">E</span>
+	<span style="--i:7">N</span>
+	<span style="--i:8">C</span>
+	<span style="--i:9">J</span>
+	<span style="--i:10">A</span>
+	<span style="--i:11">.</span>
+	<span style="--i:12">.</span>
+	<span style="--i:13">.</span>
 </div>
 <div id="topbar">
      <span class="bigtitle">Słów kilka o rekurencji</span></br>
@@ -31,15 +56,15 @@ Your browser does not support HTML5 video.
 	 B.V. Larson, Martwe słońce
 </div>	
 <div id="menu">
-    <div class="option">Strona główna</div>
-    <div class="option">Fraktale</div>
-	<div class="option">Ciągi</div>
-	<div class="option">Funckje rekurencyjne</div>
-	<div class="option">Wieża Hanoi</div>
+    <div class="option" onclick="gl()">Strona główna</div>
+    <div class="option" onclick="f()">Fraktale</div>
+	<div class="option" onclick="ci()">Ciągi</div>
+	<div class="option" onclick="fr()">Funckje rekurencyjne</div>
+	<div class="option" onclick="wh()">Wieża Hanoi</div>
 	<div style="clear:both;"></div>
 </div>
-<div id="content">
- 
+<div id="text">
+	<p id="content"></p>
 </div>
 </div>
 

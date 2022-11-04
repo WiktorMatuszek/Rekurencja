@@ -1,87 +1,116 @@
-body
-{
-    background-image: url("bg.jpg");
-	font-family: 'Roboto', sans-serif;
+
+body {
+    background-image: url("https://images7.alphacoders.com/875/875276.jpg ");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
 }
+
 #flame {
+    background-attachment: fixed;
+    background-position: center;
     position: fixed;
+    background-position-y: center;
+    background-position-x: center;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
 }
-#container
-{
+
+#container {
     width: 1000px;
     margin-left: auto;
-    margin-right: auto;	
+    margin-right: auto;
+    position: center;
 }
-#logo
-{
-	color: white;
-	margin-top: 20px;
-	font-size: 44px;
-	letter-spacing: 3px;
-	font-weight: 900;	
-}
-#topbar
-{
-    background-color: #128870;
-	color: white;
-	font-size: 18px;
-	text-align: justify;
-	padding: 10px;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	width: 990px;
-	height: 150px;
-	
-}
-.bigtitle
-{
-	font-size:30px;
-	font-weight:700;
-	letter-spacing: 3px;
-}
-.italic
-{
-	font-style: italic;
-}
-#menu
-{
-	float:left;
-    background-color: #303030;
-    margin-top: 20px;
-	margin-right: 20px;
-    color: #ffffff;
-    padding: 10px;    
-}
-.option
-{
-    float left;
-	min-width:50px;
-	height: 25px;
-	width: 200px;
-	font-size: 18px;
-	padding: 10px;
-	border-right: 2px solid #444444;
-	opacity: 0.8; 
-}
-.option:hover
-{
-    background-color: #ff5050;
-	color: white;
-	cursor: pointer;
-}
-#content
-{
-    float: left;
-    height: 600px;
-    width: 695px;
-	padding: 20px;
+
+#logo {
+    color: white;
+    background-color: rgba(48, 48, 48, 0.7);
     text-align: center;
-    font-size: 100px;
-    background-color: #669999;
-    color: black;
-	margin-top: 20px;
+    margin-top: 20px;
+    font-size: 44px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-family: Roboto;
+}
+
+#topbar {
+    background-color: rgba(48, 48, 48, 0.7);
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 990px;
+    height: 150px;
+
+}
+
+.bigtitle {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+}
+
+.italic {
+    font-style: italic;
+}
+
+#menu {
+    float: left;
+    background-color: rgba(48, 48, 48, 0.7);
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.option {
+    float: bottom;
+    min-width: 50px;
+    height: 25px;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border-right: 2px solid #444444;
+    opacity: 0.8;
+}
+
+.option:hover {
+    background-color: #ff5050;
+    color: white;
+    cursor: pointer;
+}
+
+#text {
+    float: left;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(48, 48, 48, 0.7);
+    color: white;
+    margin-top: 20px;
+}
+.waviy {
+    position: relative;
+}
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 10s infinite;
+    animation-delay: calc(.4s * var(--i))
+}
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg)
+    }
 }
