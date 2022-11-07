@@ -122,4 +122,13 @@ body {
     height: auto;
     width: auto;
 }
-
+#footer
+{
+    clear: both;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: 15px;
+    background-color: transparent;
+    width: 1000px;
+    height: auto;
+}
