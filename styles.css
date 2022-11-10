@@ -132,3 +132,11 @@ body {
     width: 1000px;
     height: auto;
 }
+
+input[type=text] {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
+    border-radius: 5px;
+    width: auto;
+    position: relative;
+}
