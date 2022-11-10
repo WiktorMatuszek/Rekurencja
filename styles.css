@@ -1,4 +1,3 @@
-
 body {
     background-image: url("https://images7.alphacoders.com/875/875276.jpg ");
     background-size: cover;
@@ -67,6 +66,7 @@ body {
     margin-right: 20px;
     color: #ffffff;
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 .option {
@@ -121,16 +121,43 @@ body {
 #headerPopup {
     height: auto;
     width: auto;
-}
-#footer
-{
-    clear: both;
-    margin-bottom: auto;
     text-align: center;
-    font-size: 15px;
-    background-color: transparent;
-    width: 1000px;
+}
+
+#fib {
     height: auto;
+    width: auto;
+    text-align: center;
+}
+
+#ciag {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+#han {
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#main {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 3px 6px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 input[type=text] {
