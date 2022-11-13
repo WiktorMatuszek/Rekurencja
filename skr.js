@@ -1,12 +1,3 @@
-function gl() {
-    document.getElementById("content").innerHTML = "Rekurencja posiada ";
-    document.getElementById("headerPopup").style.display = "none";
-    document.getElementById("fib").style.display = "none";
-    document.getElementById("han").style.display = "none";
-    document.getElementById("myForm").style.display = "none";
-    document.getElementById("main").style.display = "block";
-}
-
 function f() {
     document.getElementById("content").innerHTML = "Fraktal (łac. fractus – złamany, cząstkowy, ułamkowy) w znaczeniu potocznym oznacza zwykle obiekt samopodobny (tzn. taki, którego części są podobne do całości) albo „nieskończenie złożony” (ukazujący coraz bardziej złożone detale w dowolnie wielkim powiększeniu). Ze względu na olbrzymią różnorodność przykładów matematycy obecnie unikają podawania ścisłej definicji i proponują określać fraktal jako zbiór, który posiada wszystkie poniższe charakterystyki albo przynajmniej ich większość:\n" +
         "\n" +
@@ -54,7 +45,9 @@ function clear() {
     document.getElementById("han").style.display = "none";
     document.getElementById("myForm").style.display = "none";
     document.getElementById("main").style.display = "block";
-    document.getElementById("content").innerHTML = "Przygotowane przez Jeremiasza Moroza, Wiktora Matuszka, Jakuba Pacha";
+    document.getElementById("content").innerHTML = "Strona internetowa o Rekurencji i jej zastosowaniu. \n \n "+ "     "+ "Strona została przygotowana przez: Jeremiasza Moroza, Wiktora Matuszka, Jakuba Pacha";
+    document.getElementById("st").style.display="block";
+    document.getElementById("st1").style.display="block";
 }
 
 function fibonacci(n) {

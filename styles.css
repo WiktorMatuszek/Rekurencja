@@ -88,8 +88,8 @@ body {
 
 #text {
     float: outside;
-    height: available;
-    width: available;
+    height: auto;
+    width: auto;
     padding: 20px;
     text-align: center;
     font-size: 20px;
